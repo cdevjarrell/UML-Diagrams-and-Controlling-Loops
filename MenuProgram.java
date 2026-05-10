@@ -27,6 +27,16 @@ public class MenuProgram {
                 y = scanner.nextInt();
                 System.out.println("You enetered x = " + x + " and y = " + y);
             }
+
+            // Option 2: Print all numbers between x and y
+            else if (choice == 2) {
+                System.out.println("Numbers between " + x + " and " + y + ":");
+                // Loop from x to y and print
+                for (int i = x; i <= y; i++) {
+                    System.out.print(i + " ");
+                }
+                System.out.println();
+            }
         }
 
         // Exit message when choice 5 is selected
