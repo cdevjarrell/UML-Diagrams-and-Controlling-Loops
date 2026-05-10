@@ -52,6 +52,31 @@ public class MenuProgram {
                 double average = (double) sum / count;
                 System.out.println("The average of all numbers between " + x + " and " + y + " is: " + average);
             }
+
+            // Option 4: Find all prime numbers between x and y values
+            else if (choice == 4) {
+                System.out.println("Prime numbers between " + x + " and " + y + ":");
+                // Loop through each number between x and y
+                for (int i = x; i <= y; i++) {
+                    boolean isPrime = true;
+                    // Numbers less tahn 2 are not prime
+                    if (i < 2) {
+                        isPrime = false;
+                    }
+                    // Check if number is divisible by any number up to its square root!!
+                    for (int j = 2; j <= Math.sqrt(i); j++) {
+                        if (i % j == 0) {
+                            isPrime = false;
+                            break;
+                        }
+                    }
+                    // If prime, print
+                    if (isPrime) {
+                        System.out.print(i + " ");
+                    }
+                }
+                System.out.println();
+            }
         }
 
         // Exit message when choice 5 is selected
