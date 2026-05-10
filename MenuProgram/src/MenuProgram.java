@@ -13,7 +13,7 @@ public class MenuProgram {
             // Display menu options
             System.out.println("1 - Enter two (2) numbers (x and y)");
             System.out.println("2 - Print all numbers between x and y");
-            System.out.println("3 - FInd the average of all numbers between x and y");
+            System.out.println("3 - Fnd the average of all numbers between x and y");
             System.out.println("4 - Find all prime numbers between x and y");
             System.out.println("5 - Exit");
 
@@ -27,7 +27,7 @@ public class MenuProgram {
                 x = scanner.nextInt();
                 System.out.print("Enter y value: ");
                 y = scanner.nextInt();
-                System.out.println("You enetered x = " + x + " and y = " + y);
+                System.out.println("You entered x = " + x + " and y = " + y);
             }
 
             // Option 2: Print all numbers between x and y
